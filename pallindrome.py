@@ -1,0 +1,14 @@
+n=int(input())
+temp=n
+c=0
+if(n>=0):
+    while(n!=0):
+        r=n%10
+        c=c*10+r
+        n=n//10
+    if(c==temp):
+        print("yes")
+    else:
+        print("no")
+else:
+    print("Invalid")
